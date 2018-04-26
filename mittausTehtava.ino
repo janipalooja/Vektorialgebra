@@ -23,7 +23,7 @@ int i = 0; // Indeksin lukumäärä
 int tmp = 0; // Muuttuja, johon sensoriarvo tallennetaan väliaikaisesti järjestettäessä mitattuja arvoja nousevaan järjestykseen
 int sensoriArvo = 0;
 int mitatutSensoriArvot[MITATTAVIEN_ARVOJEN_LKM]; // Taulukko johon 6 mitattua sensoriarvoa talletetaan
-float sensoriarvojenSumma = 0;
+float sensoriarvojenSumma = 0; // Flotari muuttuja, jotta voidaan tulostaa keskiarvo kahden desimaalin tarkkuudell.
 int suurinMitattuArvo = 0;
 int pieninMitattuArvo = 1023; // Suurin mahdollinen sensoriarvo 5V jännitteellä, joten pienin mitattu arvo on varmasti tätä pienempi ja lähtee päivittymään joka mittauksella. Unon A/D-muunnin on 10-bit.
 
